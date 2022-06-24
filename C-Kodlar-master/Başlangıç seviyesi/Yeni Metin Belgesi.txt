@@ -1,0 +1,49 @@
+//A program showing how elements of an array are changed
+#include <stdio.h>
+#include <stdlib.h>
+
+void printLocalArray( void );
+void printStaticLocalArray( void );
+
+int main( void )
+{
+ printLocalArray();
+ printStaticLocalArray();
+ printf( "\n" );
+ 
+ printLocalArray();
+ printStaticLocalArray();
+
+ return 0;
+}
+
+void printLocalArray( void )
+{
+ int array [ 5 ] = { 1, 2, 3, 4, 5 };
+ printf( "%s\n", "Local array:" );
+ for( size_t counter = 0; counter < 5; counter ++ )
+ {
+  printf( "Index:%u\tElement:%d\n", counter, array[ counter ] );
+ }
+ printf( "After changing elements:\n" );
+ for( size_t counter = 0; counter < 5; counter ++ )
+ {
+  array[ counter ] = array[ counter ] + 1;
+  printf( "Index:%u\tElement:%d\n", counter, array[ counter ] );
+ }
+}
+void printStaticLocalArray( void )
+{
+ static int array [ 5 ] = { 1, 2, 3, 4, 5 };
+ printf( "%s\n", "Static Local array:" );
+ for( size_t counter = 0; counter < 5; counter ++ )
+ {
+  printf( "Index:%u\tElement:%d\n", counter, array[ counter ] );
+ }
+ printf( "After changing elements:\n" );
+ for( size_t counter = 0; counter < 5; counter ++ )
+ {
+  array[ counter ] = array[ counter ] + 1;
+  printf( "Index:%u\tElement:%d\n", counter, array[ counter ] );
+ }
+}
