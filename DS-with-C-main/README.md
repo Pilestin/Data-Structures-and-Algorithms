@@ -6,7 +6,7 @@ Created: March 14, 2022 1:51 PM
 
 | İsim | Klasör |
 | --- | --- |
-| İndex Tablosu | 1 ![ 1 ](https://github.com/Pilestin/Data-Structures-and-Algorithms/tree/main/DS-with-C-main/1) |
+| İndex Tablosu | ![ 1 ](https://github.com/Pilestin/Data-Structures-and-Algorithms/tree/main/DS-with-C-main/1) |
 | Hanoi Oyunu | ![ 2 ](https://github.com/Pilestin/Data-Structures-and-Algorithms/tree/main/DS-with-C-main/2) |
 | Market Uygulaması | ![ 3 ](https://github.com/Pilestin/Data-Structures-and-Algorithms/tree/main/DS-with-C-main/3) |
 
